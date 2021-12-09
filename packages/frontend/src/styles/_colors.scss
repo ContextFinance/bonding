@@ -1,0 +1,21 @@
+$context-dark: #1d2654;
+$context-blue: #012043;
+$context-green: #2dc28a;
+$context-blue-hover: #303fc7;
+$light-gray100: #f7f9fb;
+$light-gray200: #e9f0f3;
+$light-gray300: #dbe6ec;
+$context-pink: #ff6854;
+$dark-grey: #434e77;
+$dark-gray300: #434e77;
+
+:export {
+  contextDark: $context-dark;
+  contextBlue: $context-blue;
+  lightGray100: $light-gray100;
+  lightGray200: $light-gray200;
+  lightGray300: $light-gray300;
+  contextPink: $context-pink;
+  darkGrey: $dark-grey;
+  darkGray300: $dark-gray300;
+}

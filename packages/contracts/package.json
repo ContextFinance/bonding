@@ -1,0 +1,49 @@
+{
+  "name": "context-contracts",
+  "version": "1.0.0",
+  "description": "Smart Contracts for Context",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test hardhat test",
+    "compile": "hardhat compile",
+    "build": "yarn compile",
+    "clean": "hardhat clean",
+    "lint:sol": "solhint -f table contracts/**/*.sol",
+    "bonds:monitor": "hardhat run ./scripts/monitorBonds.js --network polygon-mainnet",
+    "bonds:adjust": "hardhat run ./scripts/adjustBonds.js --network polygon-mainnet"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.3.2",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "@atixlabs/hardhat-time-n-mine": "^0.0.5",
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@nomiclabs/hardhat-etherscan": "^2.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@openzeppelin/test-helpers": "^0.5.12",
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0",
+    "chai": "^4.3.4",
+    "ethereum-waffle": "^3.4.0",
+    "ethers": "^5.4.1",
+    "hardhat": "^2.5.0",
+    "hardhat-tracer": "^1.0.0-alpha.6",
+    "prettier": "^2.3.2",
+    "prettier-plugin-solidity": "^1.0.0-beta.17",
+    "solhint": "^3.3.6",
+    "solhint-plugin-prettier": "0.0.5",
+    "ts-node": "^10.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Context/otter-contracts.git"
+  },
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/Context/otter-contracts/issues"
+  },
+  "homepage": "https://github.com/Context/otter-contracts#readme"
+}
